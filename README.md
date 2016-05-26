@@ -1,5 +1,16 @@
 # 基于webpack+react多页面探索
 
+## 前言
+
+webpack非常适用单页面的应用，官方和网上都有大量的例子，对于在多页面的应用和实践比较少见。
+本文主要以webpack+react为例来探索在多页面下的开发模式。
+主要实现以下几点：
+
+- 独立的开发服务器
+- 每个页面对应一个入口文件，页面根据入口文件自动生成，并插入对应的css和js
+- 采用react + es6的方式进行组件模块化开发
+- 资源文件自动打包到对应的目录里
+
 ## 目录结构说明
 
 ```
@@ -22,8 +33,6 @@
 安装Node和NPM，新版本Node已经继承NPM   
 安装Webpack ``npm install webpack -g``  [http://webpack.github.io/](http://webpack.github.io/)  
 
-    以下操作都需要进入web目录
-
 ## 安装npm插件
 
 ``npm install``
@@ -31,4 +40,4 @@
 ## 相关命令
 
 - ``npm run dev`` 开发模式,访问``127.0.0.1:3000/dist/index``
-- ``npm run build`` 将文件编译,压缩,打包
+- ``npm run build`` 将文件编译,压缩,打包,访问``127.0.0.1:3000/view/index``查看效果
