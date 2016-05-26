@@ -32,7 +32,7 @@ Webpack非常适用单页面的应用，官方和网上都有大量的例子，�
 
 安装Node和NPM，新版本Node已经继承NPM   
 安装Webpack ``npm install webpack -g``  [http://webpack.github.io/](http://webpack.github.io/)
-安装Babel npm install --global babel-cli
+安装Babel ``npm install --global babel-cli``
 
 ## 安装npm插件
 
